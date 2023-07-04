@@ -13,3 +13,8 @@ and build with:
   cmake --build build --target juce_webui_VST3 --config Release  
 ```
 
+## TO DO
+
+- [x] Integrate vcpkg
+- [ ] Working webview2
+- [ ] Working interface
