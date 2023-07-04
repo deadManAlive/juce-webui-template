@@ -4,6 +4,8 @@ project(JUCE_WEBUI_PLUGIN VERSION 0.1.0)
 
 set(CMAKE_CXX_STANDARD 20)
 
+find_package(unofficial-webview2 CONFIG REQUIRED)
+
 add_subdirectory(JUCE)
 
 juce_add_plugin(juce_webui
@@ -34,3 +36,4 @@ target_link_libraries(juce_webui
             juce::juce_recommended_warning_flags
         )
 
+target_link_libraries(juce_webui PRIVATE unofficial::webview2::webview2)
